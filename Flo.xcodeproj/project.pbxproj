@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC2129711EA73C820005DB39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129701EA73C820005DB39 /* main.m */; };
+		EC2129741EA73C820005DB39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129731EA73C820005DB39 /* AppDelegate.m */; };
+		EC2129771EA73C820005DB39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129761EA73C820005DB39 /* ViewController.m */; };
+		EC21297A1EA73C820005DB39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2129781EA73C820005DB39 /* Main.storyboard */; };
+		EC21297C1EA73C820005DB39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC21297B1EA73C820005DB39 /* Assets.xcassets */; };
+		EC21297F1EA73C820005DB39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC21297D1EA73C820005DB39 /* LaunchScreen.storyboard */; };
+		EC21298A1EA73C820005DB39 /* FloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129891EA73C820005DB39 /* FloTests.m */; };
+		EC2129951EA73C820005DB39 /* FloUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129941EA73C820005DB39 /* FloUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC2129861EA73C820005DB39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC2129641EA73C820005DB39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC21296B1EA73C820005DB39;
+			remoteInfo = Flo;
+		};
+		EC2129911EA73C820005DB39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC2129641EA73C820005DB39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC21296B1EA73C820005DB39;
+			remoteInfo = Flo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC21296C1EA73C820005DB39 /* Flo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2129701EA73C820005DB39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC2129721EA73C820005DB39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC2129731EA73C820005DB39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC2129751EA73C820005DB39 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC2129761EA73C820005DB39 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC2129791EA73C820005DB39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC21297B1EA73C820005DB39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC21297E1EA73C820005DB39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC2129801EA73C820005DB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2129851EA73C820005DB39 /* FloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2129891EA73C820005DB39 /* FloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloTests.m; sourceTree = "<group>"; };
+		EC21298B1EA73C820005DB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2129901EA73C820005DB39 /* FloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2129941EA73C820005DB39 /* FloUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloUITests.m; sourceTree = "<group>"; };
+		EC2129961EA73C820005DB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC2129691EA73C820005DB39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2129821EA73C820005DB39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC21298D1EA73C820005DB39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC2129631EA73C820005DB39 = {
+			isa = PBXGroup;
+			children = (
+				EC21296E1EA73C820005DB39 /* Flo */,
+				EC2129881EA73C820005DB39 /* FloTests */,
+				EC2129931EA73C820005DB39 /* FloUITests */,
+				EC21296D1EA73C820005DB39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC21296D1EA73C820005DB39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC21296C1EA73C820005DB39 /* Flo.app */,
+				EC2129851EA73C820005DB39 /* FloTests.xctest */,
+				EC2129901EA73C820005DB39 /* FloUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC21296E1EA73C820005DB39 /* Flo */ = {
+			isa = PBXGroup;
+			children = (
+				EC2129721EA73C820005DB39 /* AppDelegate.h */,
+				EC2129731EA73C820005DB39 /* AppDelegate.m */,
+				EC2129751EA73C820005DB39 /* ViewController.h */,
+				EC2129761EA73C820005DB39 /* ViewController.m */,
+				EC2129781EA73C820005DB39 /* Main.storyboard */,
+				EC21297B1EA73C820005DB39 /* Assets.xcassets */,
+				EC21297D1EA73C820005DB39 /* LaunchScreen.storyboard */,
+				EC2129801EA73C820005DB39 /* Info.plist */,
+				EC21296F1EA73C820005DB39 /* Supporting Files */,
+			);
+			path = Flo;
+			sourceTree = "<group>";
+		};
+		EC21296F1EA73C820005DB39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC2129701EA73C820005DB39 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC2129881EA73C820005DB39 /* FloTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC2129891EA73C820005DB39 /* FloTests.m */,
+				EC21298B1EA73C820005DB39 /* Info.plist */,
+			);
+			path = FloTests;
+			sourceTree = "<group>";
+		};
+		EC2129931EA73C820005DB39 /* FloUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC2129941EA73C820005DB39 /* FloUITests.m */,
+				EC2129961EA73C820005DB39 /* Info.plist */,
+			);
+			path = FloUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC21296B1EA73C820005DB39 /* Flo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2129991EA73C820005DB39 /* Build configuration list for PBXNativeTarget "Flo" */;
+			buildPhases = (
+				EC2129681EA73C820005DB39 /* Sources */,
+				EC2129691EA73C820005DB39 /* Frameworks */,
+				EC21296A1EA73C820005DB39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flo;
+			productName = Flo;
+			productReference = EC21296C1EA73C820005DB39 /* Flo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC2129841EA73C820005DB39 /* FloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC21299C1EA73C820005DB39 /* Build configuration list for PBXNativeTarget "FloTests" */;
+			buildPhases = (
+				EC2129811EA73C820005DB39 /* Sources */,
+				EC2129821EA73C820005DB39 /* Frameworks */,
+				EC2129831EA73C820005DB39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC2129871EA73C820005DB39 /* PBXTargetDependency */,
+			);
+			name = FloTests;
+			productName = FloTests;
+			productReference = EC2129851EA73C820005DB39 /* FloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC21298F1EA73C820005DB39 /* FloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC21299F1EA73C820005DB39 /* Build configuration list for PBXNativeTarget "FloUITests" */;
+			buildPhases = (
+				EC21298C1EA73C820005DB39 /* Sources */,
+				EC21298D1EA73C820005DB39 /* Frameworks */,
+				EC21298E1EA73C820005DB39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC2129921EA73C820005DB39 /* PBXTargetDependency */,
+			);
+			name = FloUITests;
+			productName = FloUITests;
+			productReference = EC2129901EA73C820005DB39 /* FloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC2129641EA73C820005DB39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = tangyuhua;
+				TargetAttributes = {
+					EC21296B1EA73C820005DB39 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 4BADWEEE97;
+						ProvisioningStyle = Automatic;
+					};
+					EC2129841EA73C820005DB39 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 4BADWEEE97;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC21296B1EA73C820005DB39;
+					};
+					EC21298F1EA73C820005DB39 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 4BADWEEE97;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC21296B1EA73C820005DB39;
+					};
+				};
+			};
+			buildConfigurationList = EC2129671EA73C820005DB39 /* Build configuration list for PBXProject "Flo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC2129631EA73C820005DB39;
+			productRefGroup = EC21296D1EA73C820005DB39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC21296B1EA73C820005DB39 /* Flo */,
+				EC2129841EA73C820005DB39 /* FloTests */,
+				EC21298F1EA73C820005DB39 /* FloUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC21296A1EA73C820005DB39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC21297F1EA73C820005DB39 /* LaunchScreen.storyboard in Resources */,
+				EC21297C1EA73C820005DB39 /* Assets.xcassets in Resources */,
+				EC21297A1EA73C820005DB39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2129831EA73C820005DB39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC21298E1EA73C820005DB39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC2129681EA73C820005DB39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2129771EA73C820005DB39 /* ViewController.m in Sources */,
+				EC2129741EA73C820005DB39 /* AppDelegate.m in Sources */,
+				EC2129711EA73C820005DB39 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2129811EA73C820005DB39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC21298A1EA73C820005DB39 /* FloTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC21298C1EA73C820005DB39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2129951EA73C820005DB39 /* FloUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC2129871EA73C820005DB39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC21296B1EA73C820005DB39 /* Flo */;
+			targetProxy = EC2129861EA73C820005DB39 /* PBXContainerItemProxy */;
+		};
+		EC2129921EA73C820005DB39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC21296B1EA73C820005DB39 /* Flo */;
+			targetProxy = EC2129911EA73C820005DB39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC2129781EA73C820005DB39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC2129791EA73C820005DB39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC21297D1EA73C820005DB39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC21297E1EA73C820005DB39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC2129971EA73C820005DB39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC2129981EA73C820005DB39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC21299A1EA73C820005DB39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BADWEEE97;
+				INFOPLIST_FILE = Flo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.Flo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC21299B1EA73C820005DB39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BADWEEE97;
+				INFOPLIST_FILE = Flo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.Flo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC21299D1EA73C820005DB39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4BADWEEE97;
+				INFOPLIST_FILE = FloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.FloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flo.app/Flo";
+			};
+			name = Debug;
+		};
+		EC21299E1EA73C820005DB39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4BADWEEE97;
+				INFOPLIST_FILE = FloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.FloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flo.app/Flo";
+			};
+			name = Release;
+		};
+		EC2129A01EA73C820005DB39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4BADWEEE97;
+				INFOPLIST_FILE = FloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.FloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Flo;
+			};
+			name = Debug;
+		};
+		EC2129A11EA73C820005DB39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4BADWEEE97;
+				INFOPLIST_FILE = FloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.FloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Flo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC2129671EA73C820005DB39 /* Build configuration list for PBXProject "Flo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2129971EA73C820005DB39 /* Debug */,
+				EC2129981EA73C820005DB39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC2129991EA73C820005DB39 /* Build configuration list for PBXNativeTarget "Flo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC21299A1EA73C820005DB39 /* Debug */,
+				EC21299B1EA73C820005DB39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC21299C1EA73C820005DB39 /* Build configuration list for PBXNativeTarget "FloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC21299D1EA73C820005DB39 /* Debug */,
+				EC21299E1EA73C820005DB39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC21299F1EA73C820005DB39 /* Build configuration list for PBXNativeTarget "FloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2129A01EA73C820005DB39 /* Debug */,
+				EC2129A11EA73C820005DB39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC2129641EA73C820005DB39 /* Project object */;
+}
