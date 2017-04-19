@@ -15,6 +15,7 @@
 		EC21297F1EA73C820005DB39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC21297D1EA73C820005DB39 /* LaunchScreen.storyboard */; };
 		EC21298A1EA73C820005DB39 /* FloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129891EA73C820005DB39 /* FloTests.m */; };
 		EC2129951EA73C820005DB39 /* FloUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129941EA73C820005DB39 /* FloUITests.m */; };
+		EC2129A41EA73CAD0005DB39 /* PushButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129A31EA73CAD0005DB39 /* PushButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		EC2129901EA73C820005DB39 /* FloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2129941EA73C820005DB39 /* FloUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloUITests.m; sourceTree = "<group>"; };
 		EC2129961EA73C820005DB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2129A21EA73CAD0005DB39 /* PushButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushButtonView.h; sourceTree = "<group>"; };
+		EC2129A31EA73CAD0005DB39 /* PushButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushButtonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		EC21296E1EA73C820005DB39 /* Flo */ = {
 			isa = PBXGroup;
 			children = (
+				EC2129A51EA73CB30005DB39 /* View */,
 				EC2129721EA73C820005DB39 /* AppDelegate.h */,
 				EC2129731EA73C820005DB39 /* AppDelegate.m */,
 				EC2129751EA73C820005DB39 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				EC2129961EA73C820005DB39 /* Info.plist */,
 			);
 			path = FloUITests;
+			sourceTree = "<group>";
+		};
+		EC2129A51EA73CB30005DB39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC2129A21EA73CAD0005DB39 /* PushButtonView.h */,
+				EC2129A31EA73CAD0005DB39 /* PushButtonView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +291,7 @@
 			files = (
 				EC2129771EA73C820005DB39 /* ViewController.m in Sources */,
 				EC2129741EA73C820005DB39 /* AppDelegate.m in Sources */,
+				EC2129A41EA73CAD0005DB39 /* PushButtonView.m in Sources */,
 				EC2129711EA73C820005DB39 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
