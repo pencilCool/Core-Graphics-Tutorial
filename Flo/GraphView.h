@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface GraphView : UIView
+@property (nonatomic, strong) IBInspectable UIColor *startColor;
+@property (nonatomic, strong) IBInspectable UIColor *endColor;
 
 @end
