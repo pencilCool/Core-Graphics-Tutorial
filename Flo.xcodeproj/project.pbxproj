@@ -16,6 +16,7 @@
 		EC21298A1EA73C820005DB39 /* FloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129891EA73C820005DB39 /* FloTests.m */; };
 		EC2129951EA73C820005DB39 /* FloUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129941EA73C820005DB39 /* FloUITests.m */; };
 		EC2129A41EA73CAD0005DB39 /* PushButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129A31EA73CAD0005DB39 /* PushButtonView.m */; };
+		EC5ABC761EA7567100388810 /* CounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5ABC751EA7567100388810 /* CounterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		EC2129961EA73C820005DB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC2129A21EA73CAD0005DB39 /* PushButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushButtonView.h; sourceTree = "<group>"; };
 		EC2129A31EA73CAD0005DB39 /* PushButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushButtonView.m; sourceTree = "<group>"; };
+		EC5ABC741EA7567100388810 /* CounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterView.h; sourceTree = "<group>"; };
+		EC5ABC751EA7567100388810 /* CounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 			children = (
 				EC2129A21EA73CAD0005DB39 /* PushButtonView.h */,
 				EC2129A31EA73CAD0005DB39 /* PushButtonView.m */,
+				EC5ABC741EA7567100388810 /* CounterView.h */,
+				EC5ABC751EA7567100388810 /* CounterView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				EC2129741EA73C820005DB39 /* AppDelegate.m in Sources */,
 				EC2129A41EA73CAD0005DB39 /* PushButtonView.m in Sources */,
 				EC2129711EA73C820005DB39 /* main.m in Sources */,
+				EC5ABC761EA7567100388810 /* CounterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +536,7 @@
 				EC21299B1EA73C820005DB39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC21299C1EA73C820005DB39 /* Build configuration list for PBXNativeTarget "FloTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +545,7 @@
 				EC21299E1EA73C820005DB39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC21299F1EA73C820005DB39 /* Build configuration list for PBXNativeTarget "FloUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +554,7 @@
 				EC2129A11EA73C820005DB39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

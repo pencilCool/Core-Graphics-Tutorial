@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PushButtonView : UIButton
-
+@property (nonatomic, strong) IBInspectable UIColor *fillColor;
+@property (nonatomic, assign) IBInspectable BOOL    isAddButton;
 @end
