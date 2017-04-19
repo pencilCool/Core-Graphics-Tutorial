@@ -17,6 +17,7 @@
 		EC2129951EA73C820005DB39 /* FloUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129941EA73C820005DB39 /* FloUITests.m */; };
 		EC2129A41EA73CAD0005DB39 /* PushButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129A31EA73CAD0005DB39 /* PushButtonView.m */; };
 		EC5ABC761EA7567100388810 /* CounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5ABC751EA7567100388810 /* CounterView.m */; };
+		EC5ABC791EA7680B00388810 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5ABC781EA7680B00388810 /* GraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		EC2129A31EA73CAD0005DB39 /* PushButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushButtonView.m; sourceTree = "<group>"; };
 		EC5ABC741EA7567100388810 /* CounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterView.h; sourceTree = "<group>"; };
 		EC5ABC751EA7567100388810 /* CounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterView.m; sourceTree = "<group>"; };
+		EC5ABC771EA7680B00388810 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		EC5ABC781EA7680B00388810 /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 				EC2129A31EA73CAD0005DB39 /* PushButtonView.m */,
 				EC5ABC741EA7567100388810 /* CounterView.h */,
 				EC5ABC751EA7567100388810 /* CounterView.m */,
+				EC5ABC771EA7680B00388810 /* GraphView.h */,
+				EC5ABC781EA7680B00388810 /* GraphView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				EC2129771EA73C820005DB39 /* ViewController.m in Sources */,
 				EC2129741EA73C820005DB39 /* AppDelegate.m in Sources */,
 				EC2129A41EA73CAD0005DB39 /* PushButtonView.m in Sources */,
+				EC5ABC791EA7680B00388810 /* GraphView.m in Sources */,
 				EC2129711EA73C820005DB39 /* main.m in Sources */,
 				EC5ABC761EA7567100388810 /* CounterView.m in Sources */,
 			);
