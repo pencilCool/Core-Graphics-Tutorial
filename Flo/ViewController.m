@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import "CounterView.h"
 #import "GraphView.h"
+#import "Flo-Bridging-Header.h"
+#import "Flo-Swift.h"
+
+
 @interface ViewController ()
 @property(nonatomic, weak) IBOutlet CounterView *CounterView;
 @property(nonatomic, weak) IBOutlet UILabel     *counterLabel;
@@ -20,6 +24,8 @@
 
 @property(nonatomic, weak) IBOutlet UILabel *averageWaterDrunk;
 @property(nonatomic, weak) IBOutlet UILabel *maxLabel;
+
+@property(nonatomic, weak) IBOutlet MedalView *medalView;
 @end
 
 @implementation ViewController
@@ -47,12 +53,14 @@
 - (IBAction)addButtonTap:(id)sender {
     self.CounterView.counter  ++;
     self.counterLabel.text = [@(self.CounterView.counter) stringValue];
-    [self counterViewTap:nil];
+    [self checkTotal];
+    [self setupGraphDisplay];
 }
 - (IBAction)subtractionTap:(id)sender {
     self.CounterView.counter --;
     self.counterLabel.text = [@(self.CounterView.counter) stringValue];
-    [self counterViewTap:nil];
+    [self checkTotal];
+    [self setupGraphDisplay];
 }
 
 - (IBAction)counterViewTap:(id)sender {
@@ -65,7 +73,13 @@
     [self setupGraphDisplay];
 }
 
-
+- (void)checkTotal{
+    if (self.CounterView.counter >= 8) {
+        [self.medalView showMedalWithShow:true];
+    }else{
+        [self.medalView showMedalWithShow:false];
+    }
+}
 
 - (void)setupGraphDisplay {
     
@@ -84,6 +98,7 @@
     //3 - calculate average from graphPoints
     NSNumber *average = [self.GraphView.graphPoints valueForKeyPath:@"@avg.self"];
     
+    self.averageWaterDrunk.text = [average stringValue];
     //set up labels
     //day of week labels are set up in storyboard with tags
     //today is last day of the array need to go backwards
@@ -102,7 +117,7 @@
     for(NSInteger i = days.count ; i >=1 ; i -- )
     {
         UILabel  *labelView = [self.GraphView viewWithTag:i];
-        if(!labelView)
+        if(labelView)
         {
             if (weekday == 7)
             {
@@ -115,6 +130,8 @@
         }
     }
 }
+
+
 
 
 @end

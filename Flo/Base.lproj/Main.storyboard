@@ -50,8 +50,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVd-hq-qSe" customClass="MedalView" customModule="Flo" customModuleProvider="target">
+                                                <rect key="frame" x="76" y="147" width="80" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="230" id="6BO-Me-IaH"/>
                                             <constraint firstAttribute="width" constant="230" id="GFq-aT-vOZ"/>
@@ -234,6 +238,7 @@
                         <outlet property="containerView" destination="vkL-WE-rxY" id="Xpa-LM-L6U"/>
                         <outlet property="counterLabel" destination="2ty-xN-oWK" id="FcL-cm-nBb"/>
                         <outlet property="maxLabel" destination="EHI-SO-bmS" id="Ztu-gA-vnY"/>
+                        <outlet property="medalView" destination="qVd-hq-qSe" id="uzg-IF-XgH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

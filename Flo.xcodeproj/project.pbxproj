@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC196AA41EA8609A0025D07C /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC196AA31EA8609A0025D07C /* BackgroundView.m */; };
+		EC196AA81EA870EC0025D07C /* MedalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC196AA71EA870EC0025D07C /* MedalView.swift */; };
 		EC2129711EA73C820005DB39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129701EA73C820005DB39 /* main.m */; };
 		EC2129741EA73C820005DB39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129731EA73C820005DB39 /* AppDelegate.m */; };
 		EC2129771EA73C820005DB39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2129761EA73C820005DB39 /* ViewController.m */; };
@@ -41,6 +42,9 @@
 /* Begin PBXFileReference section */
 		EC196AA21EA860990025D07C /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
 		EC196AA31EA8609A0025D07C /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		EC196AA51EA868470025D07C /* MedalDrawing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MedalDrawing.playground; sourceTree = "<group>"; };
+		EC196AA61EA870EB0025D07C /* Flo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flo-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC196AA71EA870EC0025D07C /* MedalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalView.swift; sourceTree = "<group>"; };
 		EC21296C1EA73C820005DB39 /* Flo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2129701EA73C820005DB39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC2129721EA73C820005DB39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -164,6 +168,9 @@
 				EC5ABC781EA7680B00388810 /* GraphView.m */,
 				EC196AA21EA860990025D07C /* BackgroundView.h */,
 				EC196AA31EA8609A0025D07C /* BackgroundView.m */,
+				EC196AA71EA870EC0025D07C /* MedalView.swift */,
+				EC196AA51EA868470025D07C /* MedalDrawing.playground */,
+				EC196AA61EA870EB0025D07C /* Flo-Bridging-Header.h */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -236,6 +243,7 @@
 					EC21296B1EA73C820005DB39 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 4BADWEEE97;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					EC2129841EA73C820005DB39 = {
@@ -304,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC196AA81EA870EC0025D07C /* MedalView.swift in Sources */,
 				EC196AA41EA8609A0025D07C /* BackgroundView.m in Sources */,
 				EC2129771EA73C820005DB39 /* ViewController.m in Sources */,
 				EC2129741EA73C820005DB39 /* AppDelegate.m in Sources */,
@@ -459,11 +468,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4BADWEEE97;
 				INFOPLIST_FILE = Flo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.Flo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flo/Flo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -471,17 +485,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4BADWEEE97;
 				INFOPLIST_FILE = Flo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.Flo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flo/Flo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		EC21299D1EA73C820005DB39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4BADWEEE97;
 				INFOPLIST_FILE = FloTests/Info.plist;
@@ -495,6 +514,7 @@
 		EC21299E1EA73C820005DB39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4BADWEEE97;
 				INFOPLIST_FILE = FloTests/Info.plist;
@@ -508,6 +528,7 @@
 		EC2129A01EA73C820005DB39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 4BADWEEE97;
 				INFOPLIST_FILE = FloUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -520,6 +541,7 @@
 		EC2129A11EA73C820005DB39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 4BADWEEE97;
 				INFOPLIST_FILE = FloUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
