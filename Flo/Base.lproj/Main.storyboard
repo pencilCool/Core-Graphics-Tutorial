@@ -217,13 +217,13 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="lightColor">
-                                <color key="value" red="0.98823529409999999" green="0.30980392159999998" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="value" red="1" green="1" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="darkColor">
-                                <color key="value" red="1" green="0.95826691939999997" blue="0.33088809660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="value" red="0.87450980392156863" green="1" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="patternSize">
-                                <real key="value" value="200"/>
+                                <real key="value" value="30"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>

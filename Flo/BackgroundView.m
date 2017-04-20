@@ -19,14 +19,14 @@ IB_DESIGNABLE
     
     CGSize drawSize = CGSizeMake(self.patternSize, self.patternSize);
     
-//    //insert code here
-//    UIGraphicsBeginImageContextWithOptions(drawSize, true, 0.0);
-//    CGContextRef drawingContext = UIGraphicsGetCurrentContext();
-//    
-//    //set the fill color for the new context
-//    [self.darkColor setFill];
-//    CGContextFillRect(drawingContext,
-//                      CGRectMake(0, 0, drawSize.width, drawSize.height));
+    //insert code here
+    UIGraphicsBeginImageContextWithOptions(drawSize, true, 0.0);
+    CGContextRef drawingContext = UIGraphicsGetCurrentContext();
+    
+    //set the fill color for the new context
+    [self.darkColor setFill];
+    CGContextFillRect(drawingContext,
+                      CGRectMake(0, 0, drawSize.width, drawSize.height));
     
     
     UIBezierPath *trianglePath = [UIBezierPath bezierPath];
@@ -62,6 +62,11 @@ IB_DESIGNABLE
     
     [self.lightColor setFill];
     [trianglePath fill];
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    [[UIColor colorWithPatternImage:image] setFill];
+    CGContextFillRect(context, rect);
     
     
     
