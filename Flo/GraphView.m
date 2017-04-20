@@ -10,7 +10,6 @@
 
 @interface GraphView()
 
-@property (nonatomic, strong) NSArray *graphPoints;
 
 @end
 
@@ -25,7 +24,7 @@ IB_DESIGNABLE
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.graphPoints = @[@4, @2, @6, @4, @5, @8, @3];
+        self.graphPoints = @[@4, @2, @6, @4, @5, @8, @3].mutableCopy;
     }
     return self;
 }
@@ -68,14 +67,14 @@ IB_DESIGNABLE
     
     CGFloat topBorder = 60;
     CGFloat bottomBorder = 50;
-    CGFloat grapHeight = height - topBorder - bottomBorder;
+    CGFloat graphHeight = height - topBorder - bottomBorder;
     NSNumber * maxValue = [self.graphPoints valueForKeyPath:@"@max.intValue"];
     
     CGFloat (^columnYPoint)(NSInteger) =
     ^CGFloat (NSInteger graphPoint){
         
-        CGFloat   y      = graphPoint / (CGFloat)[maxValue floatValue] * grapHeight;
-        y  =     grapHeight + topBorder - y;
+        CGFloat   y      = graphPoint / (CGFloat)[maxValue floatValue] * graphHeight;
+        y  =     graphHeight + topBorder - y;
         return y;
     };
     
@@ -90,7 +89,7 @@ IB_DESIGNABLE
     }
 
     
-    //CGContextSaveGState(context)
+    CGContextSaveGState(context);
  
     UIBezierPath *clippingPath = graphPath.copy;
     [clippingPath addLineToPoint:CGPointMake(columnXPoint(self.graphPoints.count -1), height)];
@@ -106,7 +105,7 @@ IB_DESIGNABLE
     endPoint   = CGPointMake(margin, self.bounds.size.height);
     
     CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, 0);
-    
+    CGContextRestoreGState(context);
 
     graphPath.lineWidth = 2.0f;
     [graphPath stroke];
@@ -122,10 +121,34 @@ IB_DESIGNABLE
         [circle fill];
     }
     
+    UIBezierPath *linePath = [UIBezierPath bezierPath];
+    //top line
+    [linePath moveToPoint:CGPointMake(margin,topBorder)];
+    [linePath addLineToPoint: CGPointMake(width - margin,
+                                          topBorder)];
+    
+    
+    //center line
+    [linePath moveToPoint:CGPointMake(margin,
+                                      graphHeight/2 + topBorder)];
+    [linePath addLineToPoint:CGPointMake(width - margin,
+                                         graphHeight/2 + topBorder)];
+    
+    //bottom line
+    [linePath moveToPoint:CGPointMake(margin,
+                                      height - bottomBorder)];
+    [linePath addLineToPoint:CGPointMake(width - margin,
+                                         height - bottomBorder)];
+    [[UIColor colorWithWhite:1.0 alpha:0.3] setStroke];
+   
+    linePath.lineWidth = 1.0;
+    [linePath stroke];
     
     
     
+
 }
+
 
 
 @end

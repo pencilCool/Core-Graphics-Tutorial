@@ -49,6 +49,31 @@ IB_DESIGNABLE
     outlinePath.lineWidth = 5.0;
     [outlinePath stroke];
     
+    
+    //  add marker  scale
+    CGContextRef context =  UIGraphicsGetCurrentContext();
+    CGContextSaveGState(context);
+    
+    [self.outlineColor setFill];
+    
+    CGFloat markerWidth = 5.0;
+    CGFloat markerSize = 10.0;
+    
+    UIBezierPath *markerPath = [UIBezierPath bezierPathWithRect:CGRectMake( - markerWidth/2 , 0, markerWidth, markerSize)];
+    CGContextTranslateCTM(context, rect.size.width/2, rect.size.height/2);
+    for (NSInteger i = 1; i <= NoOfGlasses; i ++) {
+        CGContextSaveGState(context);
+        CGFloat angle = arcLengthPerGlass * (CGFloat)i + startAngle - π/2;
+        CGContextRotateCTM(context, angle);
+        CGContextTranslateCTM(context, 0, rect.size.height/2- markerSize);
+        [markerPath fill];
+        
+        CGContextRestoreGState(context);
+        
+    }
+    CGContextRestoreGState(context);
+    
+    
 }
 
 - (void)setCounter:(NSInteger)counter
